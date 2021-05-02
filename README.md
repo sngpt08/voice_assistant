@@ -19,9 +19,9 @@ To use the generated build please execute the following cmd in build dir itself.
 For Example:-
 
 #For using mic
-./voiceAssistant -m ../data/deepspeech-0.9.3-models.pbmm -s ../data/deepspeech-0.9.3-models.scorer -onnx ../data/distilbert-squad-128.onnx  -usemic 10
+./src/voiceAssistant -m ../data/deepspeech-0.9.3-models.pbmm -s ../data/deepspeech-0.9.3-models.scorer -onnx ../data/distilbert-squad-128.onnx -usemic 10
 
 #For using audio file
-./voiceAssistant -m ../data/deepspeech-0.9.3-models.pbmm -s ../data/deepspeech-0.9.3-models.scorer -onnx ../data/distilbert-squad-128.onnx  -audio ../data/data_smoke_test_new-home-in-the-stars-16k.wav
+./src/voiceAssistant -m ../data/deepspeech-0.9.3-models.pbmm -s ../data/deepspeech-0.9.3-models.scorer -onnx ../data/distilbert-squad-128.onnx -audio ../data/data_smoke_test_new-home-in-the-stars-16k.wav
 
 For gtest execute "./test/voiceAssistant_gtest" in build directory.
