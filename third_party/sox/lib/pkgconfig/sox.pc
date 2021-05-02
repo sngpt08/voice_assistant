@@ -1,0 +1,12 @@
+prefix=/home/l4bvishal/Desktop/mygithub/sampleVoice/third_party/sox
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SoX
+Description: Audio file format and effects library
+Version: 14.4.3git
+URL: http://sox.sourceforge.net
+Libs: -L${libdir} -lsox
+Libs.private: -lm 
+Cflags: -I${includedir}
