@@ -1,3 +1,6 @@
+#ifndef VOICE_ASSISTANT_H
+#define VOICE_ASSISTANT_H
+
 #include <string>
 
 #include "deepspeech.h"
@@ -31,3 +34,4 @@ class VoiceAssistant {
     
 }; // VoiceAssistant
 }  // voice_assistant
+#endif //VOICE_ASSISTANT_H

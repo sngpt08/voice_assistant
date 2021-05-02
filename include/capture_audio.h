@@ -1,6 +1,9 @@
 #include "sox.h"
 #include <memory>
 
+#ifndef CAPTURE_AUDIO_H
+#define CAPTURE_AUDIO_H
+
 namespace capture_audio {
 
 class CaptureAudio {
@@ -26,3 +29,5 @@ class CaptureAudio {
      
 }; // CaptureAudio
 }  // namespace capture_audio
+
+#endif // CAPTURE_AUDIO_H

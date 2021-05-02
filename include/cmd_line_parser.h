@@ -1,3 +1,6 @@
+#ifndef CMD_LINE_PARSER_H
+#define CMD_LINE_PARSER_H
+
 #include <string>
 
 namespace cmd_line_parser {
@@ -51,3 +54,4 @@ class CmdLineParser {
     size_t capture_duration {0};
 };
 } //namespace cmd_line_parser
+#endif //CMD_LINE_PARSER_H

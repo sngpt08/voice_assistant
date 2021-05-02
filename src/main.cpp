@@ -64,6 +64,10 @@ int main(int argc, char** argv) {
     } else {
       std::ifstream wav;
       wav.open(speech_input_file, std::ios_base::binary);
+      if (wav.is_open()  == false) {
+        std::cerr<<"Erron in input speech file !!! Please check file path and name."<<std::endl;
+        exit(EXIT_FAILURE);
+      }
       wav.seekg(0, std::ios::end);
       int length = wav.tellg();
       wav.seekg(0, std::ios::beg);   

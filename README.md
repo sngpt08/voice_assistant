@@ -11,9 +11,10 @@ Instuction to build and use.
    cmake ..
    make
 
+If the build is successful then "src" and "test" folder will get generated inside the build dir which contains the voiceAssistant_gtest binary.
 To use the generated build please execute the following cmd in build dir itself.
 
-./voiceAssistant -m <deepspeech_model_file> -s <deepspeech_scorer_file> --onnx <onnx_model_file> [-audio <audio_input_speech_file> or -usemic <duration>]
+./src/voiceAssistant -m <deepspeech_model_file> -s <deepspeech_scorer_file> --onnx <onnx_model_file> [-audio <audio_input_speech_file> or -usemic <duration>]
 
 For Example:-
 
@@ -22,3 +23,5 @@ For Example:-
 
 #For using audio file
 ./voiceAssistant -m ../data/deepspeech-0.9.3-models.pbmm -s ../data/deepspeech-0.9.3-models.scorer -onnx ../data/distilbert-squad-128.onnx  -audio ../data/data_smoke_test_new-home-in-the-stars-16k.wav
+
+For gtest execute "./test/voiceAssistant_gtest" in build directory.
