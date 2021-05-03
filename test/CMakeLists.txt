@@ -6,6 +6,7 @@ project(${PROJECT_NAME})
 
 include_directories(../include/
                     ../third_party/gtest/include/
+                    ../third_party/deep_speech/include/
                     )
                     
 link_directories(../third_party/gtest/lib)
