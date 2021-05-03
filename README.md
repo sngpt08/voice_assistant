@@ -3,9 +3,11 @@
 This code convert the speech data to text using deep speech lib. You can either use mic or give the audio file by specifying in the cmd line argument.
 
 Instuction to build and use.
-1. Execute setup.sh. It will download the deep speech model and scorer file from git hub.
+1. Setup the git LFS as mentioned on this page. https://git-lfs.github.com/
 
-2. Create build dir inside cloned voice_assistant and execute the following cmd.
+2. Execute setup.sh. It will download the deep speech model and scorer file from git hub.
+
+3. Create build dir inside cloned voice_assistant and execute the following cmd.
    cd voice_assistant
    mkdir build
    cmake ..
